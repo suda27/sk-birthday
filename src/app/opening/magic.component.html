@@ -1,0 +1,13 @@
+<div class = "magic"> 
+  <div class="btn" (click)='printMessage()'>
+    <svg>
+      <rect x="0" y="0" fill="none" width="166" height="45" />
+    </svg>
+    Watch video
+  </div>
+  <div *ngIf="playVideo" >
+      <video data-aos="slide-up" autoplay muted loop id="myVideo">
+          <source src="../../assets/video/sk_bg_video.mp4" type="video/mp4">
+        </video>        
+  </div>
+</div>

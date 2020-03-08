@@ -1,0 +1,65 @@
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.center {
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+
+.cake{
+  background: #ee9ca7;
+}
+.opening{
+  
+  margin: auto;
+  margin: 5%;
+  padding: 10px;
+  position: relative;
+  width: 70%;
+  height: 40%;
+  border-radius: 10%;
+  
+}
+
+.bg-img{
+  background-image: url("../assets/images/sk_niag.jpg");
+  background-color: #cccccc;
+  height: 100%;
+  background-size: cover;
+  position: relative;
+  background-blend-mode: soft-light
+}
+
+.second-set{
+  background-image: url("../assets/images/sk_beach_dawn.jpg");
+  background-color: #cccccc;
+  height: 100%;
+  background-size: cover;
+  position: relative;
+  background-blend-mode: soft-light
+}
+
+
+@media screen and (max-width: 500px) {
+  .center {
+    display: block;
+    margin: auto;
+    margin-top: 60%;
+    width : 20%;
+  }
+
+
+ 
+}
+
+
+@media screen and (max-height: 500px) {
+  .center {
+    display: block;
+    margin: auto;
+    margin-top: 20%;
+    width : 10%;
+  }
+  
+}
+
+

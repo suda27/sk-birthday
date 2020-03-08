@@ -1,21 +1,141 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div *ngIf="true">
+    <div *ngIf="loadCake" class="cake">
+        <app-credits></app-credits>
+    </div>
+    <div *ngIf="loader">
+        <img class="center" src="../assets/svg/bars.svg" />
+    </div>
 
-<router-outlet></router-outlet>
+    <div *ngIf="content">
+        <div class="bg-img">
+
+            <div class="w3-row-padding w3-padding-64 w3-theme-l1">
+
+                <div class="w3-third" data-aos="fade-right">
+                    <div class="w3-card w3-white">
+                        <img src="../assets/images/sk_sing.jpg" alt="sk singapore" style="width:100%">
+                    </div>
+                </div>
+                <div class="w3-third" data-aos="fade-up" data-aos-delay="50">
+                    <div class="w3-card w3-white">
+                        <img src="../assets/images/sk_beach.jpeg" alt="sk beach" style="width:100%;">
+                    </div>
+                </div>
+
+                <div class="w3-third" data-aos="fade-left" data-aos-delay="100">
+                    <div class="w3-card w3-white">
+                        <img src="../assets/images/sk_waterfall.jpg" alt="sk waterfalls" style="width:100%">
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-center">
+                <h1 data-aos="fade-up"> Now Let's trip..</h1>
+            </div>
+
+
+
+            <br><br><br>
+            <div data-aos="fade-up">
+                <app-traveler></app-traveler>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-col l8 s12">
+                    <div class="w3-card-4 w3-margin w3-light-grey" data-aos="fade-right">
+                        <img src="../assets/images/sk_chk1.jpg" alt="Nature" style="width:100%">
+                        <div class="w3-container">
+                            <h3><b>THAT DROWSY SMILE</b></h3>
+                            <h5>Chikmaglur, <span class="w3-opacity">2017</span></h5>
+                        </div>
+
+                        <div class="w3-container">
+                            <p>We sang! We danced.. I know we laughed our lungs out that night. One memorable trip...
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="w3-card-4 w3-margin w3-light-grey" data-aos="fade-right">
+                        <img src="../assets/images/sk_gang_chk.jpg" alt="Nature" style="width:100%">
+                        <div class="w3-container">
+                            <h3><b>THE TEN OF US</b></h3>
+                            <h5>Chikmaglur, <span class="w3-opacity">2017</span></h5>
+                        </div>
+
+                        <div class="w3-container">
+                            <p>Look at our happy faces.! Blessed are we, don't you think? 😄</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-col l4">
+                    <div class="w3-card w3-margin w3-margin-top w3-light-grey" data-aos="fade-left">
+                        <img src="../assets/images/sk_fam.jpg" style="width:100%">
+                        <div class="w3-container">
+                            <h4><b>The one with Fam!</b></h4>
+                            <p>Ah! The proud parents. Definitely they raised a wonderful daughter...</p>
+                        </div>
+
+
+                    </div>
+                    <hr>
+                    <div class="w3-card w3-margin w3-margin-top" data-aos="zoom-in">
+                        <img src="../assets/images/sk_gang.jpg" style="width:100%">
+                        <div class="w3-container w3-white">
+                            <h4><b>The one with the gang!</b></h4>
+                            <p>Afraid of water but look at you posing with us at the top of a waterfall. </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="w3-card w3-margin w3-margin-top" data-aos="zoom-out">
+                        <img src="../assets/images/sk_bro.jpg" style="width:100%">
+                        <div class="w3-container w3-white">
+                            <h4><b>The one with Anna Boy! </b></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="w3-row second-set">
+            <div class="w3-center">
+                <h1 data-aos="fade-up"> Now some favorites...</h1>
+            </div>
+            <div class="w3-third">
+                <img src="../assets/images/sk_bv.jpg" style="width:100%" alt="sk bv" data-aos="fade-left">
+                <img src="../assets/images/sk_char.jpg" style="width:100%" alt="sk charanya" data-aos="fade-left">
+                <img src="../assets/images/sk_baby.jpeg" style="width:100%" alt="sk baby" data-aos="fade-left">
+                <img src="../assets/images/sk_gir.jpg" style="width:100%" alt="sk gir" data-aos="fade-left">
+                <img src="../assets/images/sk_kru.png" style="width:100%" alt="sk kru" data-aos="fade-right">
+                <img src="../assets/images/sk_ranj_gang.jpeg" style="width:100%" alt="sk ranj gang"
+                    data-aos="fade-left">
+                <img src="../assets/images/sk_kani1.jpg" style="width:100%" alt="sk kani 1" data-aos="fade-left">
+                <img src="../assets/images/sk_niag.jpg" style="width:100%" alt="sk niag" data-aos="slide-up">
+            </div>
+            <div class="w3-third">
+                <img src="../assets/images/sk_aadu.jpg" style="width:100%" alt="sk aadu" data-aos="zoom-in">
+                <img src="../assets/images/sk_aashi.jpg" style="width:100%" alt="sk aashi" data-aos="zoom-in">
+                <img src="../assets/images/sk_varun.jpg" style="width:100%" alt="sk varun" data-aos="zoom-in">
+                <img src="../assets/images/sk_grad.jpg" style="width:100%" alt="sk grad" data-aos="slide-up">
+                <img src="../assets/images/sk_mouli.jpg" style="width:100%" alt="sk mouli" data-aos="fade-left">
+                <img src="../assets/images/sk_size.jpg" style="width:100%" alt="sk size" data-aos="fade-right">
+                <img src="../assets/images/sk_bgimg.jpg" style="width:100%" alt="sk bgimg" data-aos="zoom-in">
+                <img src="../assets/images/sk_girls.jpg" style="width:100%" alt="sk girl" data-aos="zoom-out">
+            </div>
+            <div class="w3-third">
+                <img src="../assets/images/sk_dad1.jpg" style="width:100%" alt="sk dad" data-aos="fade-right">
+                <img src="../assets/images/sk_me2.jpg" style="width:100%" alt="sk me" data-aos="fade-left">
+                <img src="../assets/images/sk_kani.jpg" style="width:100%" alt="sk kani" data-aos="zoom-in">
+                <img src="../assets/images/sk_jash_wed.jpg" style="width:100%" alt="sk baby" data-aos="slide-up">
+                <img src="../assets/images/sk_ranj.jpeg" style="width:100%" alt="sk gir" data-aos="zoom-in">
+                <img src="../assets/images/sk_trad.jpg" style="width:100%" alt="sk trad" data-aos="fade-left">
+
+            </div>
+
+        </div>
+
+        <app-magic></app-magic>
+    </div>
+
+</div>
